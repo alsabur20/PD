@@ -14,15 +14,15 @@ main()
   int x;
   int y;
   gotoxy(0,0);
-  sVertical();
-  gotoxy(10,0);
   aVertical();
+  gotoxy(10,0);
+  cout <<"";
   gotoxy(20,0);
-  bVertical();
+  cout <<"";
   gotoxy(30,0);
-  uVertical();
+  cout <<"";
   gotoxy(40,0);
-  rVertical();
+  aVertical();
 }
 
 void gotoxy(int x, int y)

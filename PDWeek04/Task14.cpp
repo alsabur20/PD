@@ -21,13 +21,6 @@ main()
   float aggregateStd2;
 
   header();
-  cout << endl;
-  cout << endl;
-  cout << endl;
-  cout << "Welcome to UET Admission Management System";
-  cout << endl;
-  cout << endl;
-  cout << endl;
   printMenu();
 
 while(true)
@@ -37,7 +30,8 @@ while(true)
   cout << endl;
  
   if(choice == 1)
-  {
+  { 
+    system("cls");
     cout << "You chose: " << choice << endl;
     cout << "Enter you name: ";
     cin >> nameStd1;
@@ -53,18 +47,12 @@ while(true)
    {
     system("cls");
     header();
-    cout << endl;
-    cout << endl;
-    cout << endl;
-    cout << "Welcome to UET Admission Management System";
-    cout << endl;
-    cout << endl;
-    cout << endl;
     printMenu();
    }
   }
   if(choice == 2)
   {
+    system("cls");
     cout << "You chose: " << choice << endl;
     cout << "Enter you name: ";
     cin >> nameStd2;
@@ -80,18 +68,12 @@ while(true)
    {
     system("cls");
     header();
-    cout << endl;
-    cout << endl;
-    cout << endl;
-    cout << "Welcome to UET Admission Management System";
-    cout << endl;
-    cout << endl;
-    cout << endl;
     printMenu();
    }
   }
   if(choice == 3)
   {
+    system("cls");
     aggregateStd1 = (matricMarksStd1/1100*100)*0.3 + (interMarksStd1/550*100)*0.3 + (ecatMarksStd1/400*100)*0.4 ;
     cout << nameStd1 << "'s aggregate is " << aggregateStd1 << endl;
     cout << "Press any key to continue...    ";
@@ -100,18 +82,12 @@ while(true)
    {
     system("cls");
     header();
-    cout << endl;
-    cout << endl;
-    cout << endl;
-    cout << "Welcome to UET Admission Management System";
-    cout << endl;
-    cout << endl;
-    cout << endl;
     printMenu();
    }
   }
   if(choice == 4)
   {
+    system("cls");
     aggregateStd2 = (matricMarksStd2/1100*100)*0.3 + (interMarksStd2/550*100)*0.3 + (ecatMarksStd2/400*100)*0.4 ;
     cout << nameStd2 << "'s aggregate is " << aggregateStd2 << endl;
     cout << "Press any key to continue...    ";
@@ -120,20 +96,15 @@ while(true)
    {
     system("cls");
     header();
-    cout << endl;
-    cout << endl;
-    cout << endl;
-    cout << "Welcome to UET Admission Management System";
-    cout << endl;
-    cout << endl;
-    cout << endl;
     printMenu();
    }
   }
   if(choice == 5)
   {
+
     if (ecatMarksStd1 > ecatMarksStd2)
     {
+      system("cls");
       cout << "Rollnumber 01 is :";
       cout << nameStd1;
       cout << endl;
@@ -143,18 +114,12 @@ while(true)
      {
       system("cls");
       header();
-      cout << endl;
-      cout << endl;
-      cout << endl;
-      cout << "Welcome to UET Admission Management System";
-      cout << endl;
-      cout << endl;
-      cout << endl;
       printMenu();
      }
     }
     if (ecatMarksStd1 < ecatMarksStd2)
     {
+      system("cls");
       cout << "Rollnumber 01 is :";
       cout << nameStd2;
       cout << endl;
@@ -164,13 +129,6 @@ while(true)
      {
       system("cls");
       header();
-      cout << endl;
-      cout << endl;
-      cout << endl;
-      cout << "Welcome to UET Admission Management System";
-      cout << endl;
-      cout << endl;
-      cout << endl;
       printMenu();
      }
     }
@@ -183,6 +141,13 @@ void header()
  cout << "################" << endl;
  cout << "#  UET LAHORE  #" << endl;
  cout << "################" << endl;
+ cout << endl;
+ cout << endl;
+ cout << endl;
+ cout << "Welcome to UET Admission Management System";
+ cout << endl;
+ cout << endl;
+ cout << endl;
 }
 
 void printMenu()
