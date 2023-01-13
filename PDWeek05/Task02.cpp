@@ -21,7 +21,7 @@ main()
 float volumeInM = volume(length,width,height);
 float finalAnswer = unit(volumeInM,unit1);
 
-cout << finalAnswer << "cubic " << unit1;
+cout << finalAnswer << " cubic " << unit1;
 }
 float volume(float length, float width, float height)
 {
