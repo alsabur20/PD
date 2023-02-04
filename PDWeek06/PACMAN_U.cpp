@@ -55,8 +55,8 @@ main()
                 erase(ghostX1, ghostY1, previousChar);
                 ghostX1 = ghostX1 + 1;
                 printG1(ghostX1, ghostY1);
-                gameRunning = false;
                 Sleep(250);
+                gameRunning = false;
             }
         }
 
@@ -79,8 +79,9 @@ main()
                 erase(ghostX1, ghostY1, previousChar);
                 ghostX1 = ghostX1 - 1;
                 printG1(ghostX1, ghostY1);
-                gameRunning = false;
+
                 Sleep(250);
+                gameRunning = false;
             }
         }
         if (directionY == "up")
@@ -102,8 +103,9 @@ main()
                 erase(ghostX2, ghostY2, previousChar);
                 ghostY2 = ghostY2 + 1;
                 printG2(ghostX2, ghostY2);
-                gameRunning = false;
+
                 Sleep(250);
+                gameRunning = false;
             }
         }
         if (directionY == "down")
@@ -125,8 +127,9 @@ main()
                 erase(ghostX2, ghostY2, previousChar);
                 ghostY2 = ghostY2 - 1;
                 printG2(ghostX2, ghostY2);
-                gameRunning = false;
+
                 Sleep(250);
+                gameRunning = false;
             }
         }
         // Pacman
